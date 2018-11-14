@@ -1,0 +1,123 @@
+{include file="public/header" /}
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header header header-demo">
+        <div class="layui-main">
+            <a class="logo" href="./index.html">
+                X-admin v1.0
+            </a>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><img src="__STATIC__/images/logo.png" class="layui-circle"
+                                                style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">admin</a>
+                    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                        <dd><a href="">个人信息</a></dd>
+                        <dd><a href="">切换帐号</a></dd>
+                        <dd><a href="./login.html">退出</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item x-index"><a href="/">前台首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-side layui-bg-black x-side">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav" lay-filter="side">
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe607;</i><cite>资讯管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="{:url('article/index')}">
+                                <cite>资讯列表</cite>
+                            </a>
+                        </dd>
+                        </dd>
+
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe634;</i><cite>轮播管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                        <dd class="">
+                            <a href="javascript:;" _href="{:url('banner/index')}">
+                                <cite>轮播列表</cite>
+                            </a>
+                        </dd>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe630;</i><cite>分类管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="javascript:;" _href="{:url('category/index')}">
+                                <cite>分类列表</cite>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+
+
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>管理员管理</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="javascript:;" _href="{:url('admin/index')}">
+                                <cite>管理员列表</cite>
+                            </a>
+                        </dd>
+
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a class="javascript:;" href="javascript:;">
+                        <i class="layui-icon" style="top: 3px;">&#xe614;</i><cite>系统设置</cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd class="">
+                            <a href="javascript:;" _href="{:url('system/index')}">
+                                <cite>系统设置</cite>
+                            </a>
+                        </dd>
+
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="layui-tab layui-tab-card site-demo-title x-main" lay-filter="x-tab" lay-allowclose="true">
+        <div class="x-slide_left"></div>
+        <ul class="layui-tab-title">
+            <li class="layui-this">
+                我的桌面
+                <i class="layui-icon layui-unselect layui-tab-close">ဆ</i>
+            </li>
+        </ul>
+        <div class="layui-tab-content site-demo site-demo-body">
+            <div class="layui-tab-item layui-show">
+                <iframe frameborder="0" src="{:url('index/welcome')}" class="x-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="site-mobile-shade">
+    </div>
+</div>
+{include file="public/base_js" /}
+</body>
+</html>
